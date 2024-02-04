@@ -236,3 +236,92 @@ body{
 #store-features .feature+ .feature{
     border-right: 1px solid #ffe7ea;
 }
+
+/* نهاية مميزات المتجر */
+
+.heading{
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.custom-thumbnial img{
+    height: 250px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.custom-thumbnial{
+    border: 2px solid #eef0ea;
+    padding: 25px; /*8px;*/
+    cursor: pointer;
+}
+
+.custom-thumbnial:hover{
+    border-color: #ff3956;
+}
+
+.custom-thumbnial h4{
+    font-size: 18px;
+}
+
+.price{ /*لكل الأسعار في الموقع*/
+    color: #ff3956;
+}
+
+.rating{
+    color: #c2c2c2;
+}
+
+.rating .active{
+    color: #f3af41;
+}
+
+.overlay{
+    position: absolute;
+    background-color: rgba(83, 204, 215, 0.5);
+    height: 250px;
+    width: calc(100% - 53px); /*مفروض 25+25 Padding الصورة*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.add-to-cart-btn{
+    color: #53ccd7;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.custom-thumbnial .sale{
+    padding: 5px 10px;
+    position: absolute;
+    left: 20px;
+    top: 17px;
+}
+
+.custom-thumbnial .sale::before{
+    content: "-";
+}
+
+.custom-carousel-indicators2{
+    bottom: -70px !important;
+}
+
+.custom-carousel-indicators2>li{
+    width: 13px !important;
+    height: 13px !important;
+    margin: 2px !important;
+    background-color: #dbdbdb !important;
+}
+
+.custom-carousel-indicators2>li{
+    background-color: #565656 !important;
+}
