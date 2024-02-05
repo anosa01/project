@@ -13,4 +13,6 @@ document.querySelectorAll('.add-to-cart-btn').forEach(item => {
      })
 })
 
+document.getElementById("copyright").innerHTML = "جميع الحقوق محفوظة للمتجر لعام" + new Date().getFullYear();
+
 console.log("أهلا بك في متجر أنوسة للأنوثة")
