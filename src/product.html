@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر أنوسة | فستان شتوي</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- القائمة العلوية -->
+        <div class="row">
+            <nav class="navbar custom-navbar navbar-expand-lg">
+                <div class="container px-0">
+                    <div class="navbar-header">
+                        <button class="navbar-toggler btn btn-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars fa-xl"></i>
+                          </button>
+                          <a href="./checkout.html" class="btn-icon btn d-lg-none">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </a>
+                        <a href="./index.html" class="me-5 custom-main">
+                            <img src="./images/Anosa.jpg " alt="متجر أنوسة">
+                        </a>  
+                    </div>  
+                    <form action="" class="d-flex inline-form">   
+                        <input type="search" class="form-control custom-form-control" placeholder="كلمة البحث....">
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle custom-btn categories" id="navbarDropdown" role="button" data-bs-toggle="dropdown" area-expanded="false">اختر فئة</a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li>
+                                    <div class="checkbox ms-2">
+                                        <label>
+                                            <input type="checkbox" name="search.category" value="long-dresses">
+                                            فساتين طويلة
+                                        </label>
+                                    </div> 
+                                </li>
+                                <li>
+                                    <div class="checkbox ms-2">
+                                        <label>
+                                            <input type="checkbox" name="search.category" value="short-dresses">
+                                            فساتين قصيرة
+                                        </label>
+                                    </div> 
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="submit" class="btn search-btn">ابحث</button>
+                    </form> 
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                       <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a href="./index.html" class="nav-link">الصفحة الرئيسية</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">أقسام المتجر</a>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li>
+                                        <a href="#" class="dropdown-item">فستانين شتوي</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">فستانين صيفي</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">فستانين قصيرة</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./search.html" class="nav-link">البحث المتقدم</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./contact.html" class="nav-link">تواصل معنا</a>
+                            </li>
+                            <li class="mt-2">
+                                <a class="btn-icon btn d-none d-lg-block" id="btn-shopping-cart" href="./checkout.html" 
+                                title="عربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </li>
+                       </ul>
+                    </div>
+                </div>
+                
+            </nav>
+        </div>
+        <!-- نهاية القائمةالعلوية -->
+        <!-- القائمة الفرعية -->
+        <div class="container">
+            <div class="row" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                <ol class="breadcrumb custom-breadcrumb">
+                    <li class=" breadcrumb-item">
+                        <a href="./index.html">الصفحة الرئيسية</a>
+                    </li>
+                    <li class=" breadcrumb-item">
+                        <a href="#">فساتين طويلة</a>  <!-- لازم لينك الصفحة يتغير -->
+                    </li>
+                    <li class=" breadcrumb-item active">
+                        فستان شتوي
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!-- نهاية القائمة الفرعية -->
+        <div class="container borders-between">
+            <!-- قسم الصور وتفاصيل المنتج -->
+            <div class="row mb-5">
+                <div class="col-lg-5 col-md-9 offset-md-2 offset-lg-1 product-images">
+                    <div id="carousel-product-images" class="carousel slide text-center" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/1.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/2.png">
+                            </div>
+                        </div>
+                        <div class="carousel-indicators custom-carousel-indicators">
+                            <img src="./images/1.png" class="custom-carousel-indicators-primary active" data-bs-target="#carousel-product-images" data-bs-slide-to="0">
+                            <img src="./images/2.png" class="custom-carousel-indicators-primary" data-bs-target="#carousel-product-images" data-bs-slide-to="1">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="col-lg-5">
+                    <form action="" id="form-product-selection" class="borders-between">                    
+                        <div class="row">
+                            <div class="product-category">
+                                فساتين طويلة شتوي
+                            </div>
+                            <div class="clear-fix">
+                                <h2 class="float-start">فستان ميلتون</h2>
+                                <div class="float-end price large"> 13.000KD</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="product-description">
+                                فستان ميلتون مبطن ثقيل
+                            </p>
+                        </div>
+                        <div class="row brand-and-rating">
+                            <div class="col-6">
+                                <div class="brand">
+                                    الماركة:
+                                    <!-- <img src="./images/1.png" alt="ceylan"> ملهاش لازمة -->
+                                    ceylam
+                                </div>
+                                <div class="col-6">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row size-and-color">
+                            <div class="col-md-6">
+                                المقاسات المتاحة:
+                                <br>
+                                <div class="product-option size-option">
+                                    <label>
+                                        S
+                                        <input type="radio" name="size" value="sm">
+                                    </label>
+                                </div>
+                                <div class="product-option size-option">
+                                    <label>
+                                        M
+                                        <input type="radio" name="size" value="m">
+                                    </label>
+                                </div>
+                                <div class="product-option size-option active">
+                                    <label>
+                                        L
+                                        <input type="radio" name="size" value="l" checked>
+                                    </label>
+                                </div>
+                                <div class="product-option size-option">
+                                    <label>
+                                        XL
+                                        <input type="radio" name="size" value="xl">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                الألوان المتاحة:
+                                <br>
+                                <div class="product-option color-option" active style="background-color: #000000;">
+                                    <label> &nbsp;
+                                        <input type="radio" name="color" id="black" checked>
+                                    </label>                                    
+                                </div>
+                                <div class="product-option color-option" style="background-color: #3D1C0B;">
+                                    <label> &nbsp;
+                                        <input type="radio" name="color" id="brown">
+                                    </label>                                    
+                                </div>
+                                <div class="product-option color-option" style="background-color: #432E19;">
+                                    <label> &nbsp;
+                                        <input type="radio" name="color" id="light-brown">
+                                    </label>                                   
+                                </div> 
+                                <div class="product-option color-option" style="background-color: #AA8873;">
+                                    <label> &nbsp;
+                                        <input type="radio" name="color" id="mink">
+                                    </label>                                     
+                                </div> 
+                                <div class="product-option color-option" style="background-color: #CEC6B7;">
+                                    <label> &nbsp;
+                                        <input type="radio" name="color" id="cream">
+                                    </label>                                    
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="product-quantity">
+                            <div>
+                                العدد:
+                                <select name="quantity" class="custom-form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn custom-btn-warning custom-btn-with-icon">
+                                <span>
+                                    إضافة لعربة الشراء
+                                    <i class="fas fa-cart-plus"></i>
+                                </span>
+    
+                            </button>
+                        </div>                        
+                    </form>
+                </div>
+            </div>
+             <!-- نهاية قسم الصور وتفاصيل المنتج -->
+             <!-- وصف المنتج -->
+            <div class="more-description">
+                <h3 class="heading heading-with-border-bottom heading-inline">
+                    وصف المنتج
+                </h3>
+                <p>فستان ميلتون مبطن</p>
+                <ul>
+                    <li>القماش: ميلتون مبطن ثقيل</li>
+                    <li>الطول: 145 سم</li>
+                    <li>مستورد</li>
+                </ul>
+            </div>
+            <!-- نهاية وصف المنتج -->
+            <!-- التعليقات -->
+            <div class="row">
+                <div class="comments borders-between">
+                    <h3 class="heading heading-with-border-bottom heading-inline">التعليقات على المنتج</h3>
+                    <div class="row">
+                        <div class="comment d-flex mb-2"> <!-- حسيت 3 كتير -->
+                            <img src="./images/review.png" alt="reviewr-1">
+                            <div>
+                                <h4>
+                                    رحاب حسن
+                                </h4>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>فستان رائع أنصح بشراؤه</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="comment d-flex">
+                            <img src="./images/review.png" alt="reviewr-1">
+                            <div>
+                                <h4>
+                                    إيناس خليل
+                                </h4>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>القماش يجنن</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- نهاية التعليقات -->
+            <!-- الاقتراحات-->
+            <div class="row suggestions"> 
+                <h3 class="heading">
+                    اقترحنا لك
+                </h3>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 d-none d-md-block">
+                        <div class="card custom-thumbnial">
+                            <div class="overlay">
+                                 <button class="btn add-to-cart-btn">
+                                    إضافة إلى العربة
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                            <img src="images/Dresses.png" alt="فساتين">
+                            <div class="card-body p-2">
+                                <div class="clearfix">
+                                    <h4 class="float-start">فساتين</h4>
+                                    <div class="price float-end">13.000KD </div>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                 <button class="btn add-to-cart-btn d-block d-lg-none mx-auto">
+                                    إضافة إلى العربة
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 d-none d-md-block">
+                        <div class="card custom-thumbnial">
+                            <div class="overlay">
+                                <button class="btn add-to-cart-btn">
+                                    إضافة إلى العربة
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                            <img src="images/Dresses.png" alt="فساتين">
+                            <div class="card-body p-2">
+                                <div class="clearfix">
+                                    <h4 class="float-start">فساتين</h4>
+                                    <div class="price float-end">13.000KD</div>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                 <button class="btn add-to-cart-btn d-block d-lg-none mx-auto">
+                                    إضافة إلى العربة
+                                <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 d-none d-md-block">
+                        <div class="card custom-thumbnial">
+                            <div class="sale">50%</div>
+                            <div class="overlay">
+                                <button class="btn add-to-cart-btn">
+                                    إضافة إلى العربة
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                            <img src="images/Dresses.png" alt="فساتين">
+                            <div class="card-body p-2">
+                                <div class="clearfix">
+                                    <h4 class="float-start">فساتين</h4>
+                                    <div class="price float-end">13.000KD</div>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                 <button class="btn add-to-cart-btn d-block d-lg-none mx-auto">
+                                    إضافة إلى العربة
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 d-none d-lg-block">
+                        <div class="card custom-thumbnial">
+                            <div class="overlay">
+                                <button class="btn add-to-cart-btn">
+                                    إضافة إلى العربة
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                            <img src="images/Dresses.png" alt="فساتين">
+                            <div class="card-body p-2">
+                                <div class="clearfix">
+                                    <h4 class="float-start">فساتين</h4>
+                                    <div class="price float-end">13.000KD</div>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                 <button class="btn add-to-cart-btn d-block d-lg-none mx-auto">
+                                    إضافة إلى العربة
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <!--من عندي لأجل عارض الاقتراحات -->
+                <div id="s-suggestions" class="carousel slide d-md-none d-block" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card custom-thumbnial">
+                                <img src="images/Dresses.png" alt="فساتين">
+                                <div class="card-body p-2">
+                                    <div class="clearfix">
+                                        <h4 class="float-start">فساتين</h4>
+                                        <div class="price float-end">13.000KD </div>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                     <button class="btn add-to-cart-btn d-block d-lg-none mx-auto">
+                                        إضافة إلى العربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnial">
+                                <img src="images/Dresses.png" alt="فساتين">
+                                <div class="card-body p-2">
+                                    <div class="clearfix">
+                                        <h4 class="float-start">فساتين</h4>
+                                        <div class="price float-end">13.000KD </div>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                     <button class="btn add-to-cart-btn d-block d-lg-none mx-auto">
+                                        إضافة إلى العربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card custom-thumbnial">
+                                <img src="images/Dresses.png" alt="فساتين">
+                                <div class="card-body p-2">
+                                    <div class="clearfix">
+                                        <h4 class="float-start">فساتين</h4>
+                                        <div class="price float-end">13.000KD </div>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                     <button class="btn add-to-cart-btn d-block d-lg-none mx-auto">
+                                        إضافة إلى العربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn arrow-btn" data-bs-target="#s-suggestions" data-bs-slide="prev">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="btn arrow-btn" data-bs-target="#s-suggestions" data-bs-slide="next">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- من عندي -->
+                
+            </div>
+            <!-- نهاية الاقتراحات -->
+            <!-- ذيل الصفحة -->
+        </div>
+        <footer class="row">
+            <div id="footer-nav" class="text-center">
+                <div class="footer-logo">
+                    <a href="./">
+                        <img src="./images/Anosa.jpg" alt="logo" style="width:125px">
+                    </a>
+                </div>
+                <div class="footer-nav-links d-none d-md-block">
+                    <a href="./index.html">الصفحة الرئيسية</a>
+                    <a href="search.html">البحث المتقدم</a>
+                    <a href="contact.html">تواصل معنا</a>
+                </div>                
+                <div class="footer-nav-links d-block d-md-none"> <!-- من عندي -->
+                    <a href="contact.html">تواصل معنا</a>
+                </div>
+                <div class="newsletter col-md-6 offset-md-3 d-flex align-items-center justify-content-center">
+                    <form>
+                        <label for="footer-input">تابع النشرة البريدية لأحدث العروض</label>
+                        <br>
+                        <div class="input-group">
+                            <input type="email" name="email" id="footer-input" class="form-control custom-form-control" placeholder="البريد الإلكتروني">
+                            <button type="submit" class="btn custom-btn-warning">متابعة</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="footer-copyright-social">
+                <div class="container">
+                    <div class="clearfix">
+                        <div id="copyright" class="float-start"></div>
+                        <div id="social-icons" class="float-end">
+                            <a href="https://www.instagram.com/anosa.str?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                                <i class="fa-brands fa-instagram fa-lg"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@anosa.str?_t=8jUPIEfLS1y&_r=1">
+                                <i class="fa-brands fa-tiktok fa-lg"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=56595886" >
+                                <i class="fa-brands fa-whatsapp fa-lg"></i>
+                            </a>
+                            <a href="mailto:anosa.str@gmail.com" >
+                                <i class="fa-solid fa-envelope fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- نهاية ذيل الصفحة -->
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

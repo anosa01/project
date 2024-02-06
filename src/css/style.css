@@ -18,6 +18,11 @@ body{
     padding: 15px 0;
 
 }
+ 
+.custom-main img{ /* من عندي */
+    width:65px; 
+    border-radius:50%;
+}
 
 .custom-form-control, .dropdown a.custom-btn{
    border: 1px solid #ebebeb;
@@ -187,12 +192,12 @@ body{
     font-size: 14px;
 } */
 
-.custom-carousel-indications{
+.custom-carousel-indicators{
     top: 235px;
     right: 41%;
     }
 
-.custom-carousel-indications-primary{
+.custom-carousel-indicators-primary{
     height: 70px !important;
     width: 70px !important;
     opacity: 1 !important;
@@ -201,7 +206,7 @@ body{
     margin-left: 5px !important;
 }
 
-.custom-carousel-indications-primary.active {
+.custom-carousel-indicators-primary.active {
     border-color: #f8ad47 !important;
 }
 
@@ -430,6 +435,145 @@ body{
     font-size: 12px;
 }
 
+/*-----------------------------------------------------------Product Page ----------------------------------------------------------------*/
+
+.custom-breadcrumb{
+    padding: 25px 0;
+}
+
+.custom-breadcrumb a{
+    color: #555;
+    text-decoration: none;
+}
+
+.custom-breadcrumb a:hover{
+    color: #f8ad47;
+}
+
+.custom-breadcrumb>li::before {
+    color: #f8ad47 !important;
+}
+
+.custom-breadcrumb .active{
+    color: #bfbfbf;
+}
+
+/* نهاية القائمة الفرعية */
+
+#carousel-product-images .carousel-indicators{
+    position: absolute;
+    top: 92%;
+    right: 0; 
+}
+
+#carousel-product-images .carousel-item img{
+    margin: 0 -10% ;
+    
+    width: 80%; /*كانت 100 بس كبيرة على الثورة اللي في الشكل*/
+    height: auto;
+    border: 1px solid #ebebeb;
+
+}
+
+.product-category{
+    color: #a9a9a9;
+}
+
+#form-product-selection h2{
+    font-size: large;
+    font-weight: 600;
+    margin: 18px 0;
+}
+
+.price.large{
+    font-size: large;
+    margin-top: 20px;
+}
+
+.borders-between>div+div{
+    border-top: 1px solid #ebebeb;
+    padding: 15px 0;
+}
+
+.product-option{
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    border: 1px solid #ebebeb;
+    text-align: center;
+    justify-content: center;
+    color: #c2c2c2;
+    margin: 3px;
+    font-weight: 700;
+}
+
+.product-option input{
+    display: none;
+}
+
+.product-option.active{
+    color: #f8ad47;
+    border-color: #f8ad47;
+}
+.color-option.active {
+    border-color: #fff;
+    outline: #000 solid 1px;
+
+}
+
+.product-option label{  /*  من عندي لان اخيار الالوان صعب*/
+    height: 100%;
+    width: 100%;
+  }
+
+.product-quantity select{
+    height: 34px !important;
+    padding: 3px 12px;
+    margin-right: 5px;
+}
+
+.custom-btn-with-icon{
+    margin: 15px 0;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.heading-with-border-bottom{
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 15px;
+}
+
+.heading-inline{
+    display: inline-block;
+    min-width: 250px;
+}
+
+.more-descriptionp p,
+.more-descriptionp ul{
+    margin-bottom: 10px;
+}
+
+.comments .comment img{
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    border: 1px solid #dfdfdf;
+}
+
+.comments .comment h4{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1399.98px) or (min-width: 1399.98px)  { 
     /*  or (min-width: 1399.98px) من عندي */
     #carousel-featured .carousel-indicators{
@@ -458,6 +602,11 @@ body{
 }
 
 @media (max-width: 991.98px) {
+    .custom-main img{ /* من عندي */
+        width:31px; 
+        border-radius:50%;
+    }
+    
     .custom-navbar {
         padding: 15px 20px 30px;
     }
@@ -540,10 +689,22 @@ body{
         margin-right: 20px;
     }
 
+    .product-images{
+        margin-bottom: 70px;
+    }
+
+    .product-option{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin: 10px;
+        font-size: 20px;
+    }
+
 }
 
 @media (max-width: 767.98px) {
-
+    
     #carousel-featured{
         padding-bottom: 25px;
     }
@@ -579,6 +740,10 @@ body{
         max-width: 100%;
         padding: 0 20px;
     }
+
+    .custom-thumbnial img{ /* من عندي لأجل عارض الاقتراحات*/
+        margin: auto !important;
+    }
 }
 
 @media (max-width: 575.98px) { 
@@ -589,6 +754,16 @@ body{
     .inline-form .search-btn{
         width: 20% !important;
     }
+
+    #form-product-selection,
+    .comments,
+    .suggestions,
+    .more-description{
+        padding-right: 20px !important;
+
+    }
+
+    
 }
 
 
