@@ -35,8 +35,8 @@ body{
 }
 
 .custom-form-control:focus{
-    border-color: #c2101e;
-    box-shadow: 0 0 2px 0 #c2101e;
+    border-color: rgb(104, 181, 226);
+    box-shadow: 0 0 2px 0  rgb(104, 181, 226);
 }
 
 .dropdown a.custom-btn:hover {
@@ -717,13 +717,32 @@ h1.custom-heading{
     border-color: #f8ad47 !important;
 }
 
-/*  */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#contact-options h4 {
+    font-size: 18px;
+}
+
+#contact-info .fa-lg {
+    color: #f3af41;
+    margin: 10px 0px 0px 10px;
+}
+
+#contact-options textarea {
+    height: 105px !important;
+    width: 93%;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------  */
 @media (max-width: 1399.98px) or (min-width: 1399.98px)  { 
     /*  or (min-width: 1399.98px) من عندي */
     #carousel-featured .carousel-indicators{
         margin-right: 25%;
         /* من عندي */
     }
+    .custom-submit{ /* من عندي */
+        margin: 0 -40px;
+    }        
 }
 
 @media (max-width: 1199.98px) { 
@@ -844,6 +863,29 @@ h1.custom-heading{
         margin: 10px;
         font-size: 20px;
     }
+
+    .custom-input-details{        
+        width: 100%; 
+        /*من عندي عشان المربع يكبر لما الشاشة تصغر */
+    }
+
+    #contact-options textarea {
+        height: 105px !important;
+        width: 100%;
+    }
+
+    .custom-submit{ /* من عندي */
+        margin: 0 0;
+    } 
+
+    #form-subscription {
+        margin-bottom: 25px;
+    }
+
+    #contact-options input[name=name]{
+        margin-bottom: 15px;
+    }
+   
 }
 
 @media (max-width: 767.98px) {
@@ -897,12 +939,7 @@ h1.custom-heading{
     .hide-on-small{
         display: none;
     }
-
-    .custom-input-details{        
-        width: 100%; 
-        /*من عندي عشان المربع يكبر لما الشاشة تصغر */
-    }
-
+    
     .search-pagination{
         display: flex !important;
         justify-content: center !important;
