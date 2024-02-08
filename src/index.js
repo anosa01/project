@@ -69,6 +69,63 @@ function calculateTotalPrice() {
 }  
 document.getElementById("copyright").innerHTML = "جميع الحقوق محفوظة للمتجر لعام" + new Date().getFullYear();
 
+const citiesByCountry = {
+    kwt:['الأحمدي','الجهراء','العاصمة','الفروانية','حولي','مبارك الكبير'],
+    ksa:['الرياض','الدرعية','الخرج','الدوادمي','المجمعة','القويعية','الأفلاج','وادي الدواسر','الزلفي','شقراء','حوطة بني تميم',
+        'عفيف','الغاط','السليل','ضرما','المزاحمية','رماح','ثادق','حريملاء','الحريق','مرات','الرين','الدلم','أخرى'],
+    qtr:['الدوحة','الغويرية','الجميلية','الخور','الوكرة','الريان','جريان البطنة','الشمال','أم صلال','مسيعيد','أخرى'],
+    brn:['العاصمة','المحرق','الشمالية','الجنوبية','أخرى'],
+    ae:['أبوظبي','الشارقة','الفجيرة','أم القيوين','دبي','رأس الخيمة','عجمان','أخرى'],
+    omn:['الداخلية','الظاهرة','شمال الباطنة','جنوب الباطنة','البريمي','الوسطى','شمال الشرقية','جنوب الشرقية','ظفار','مسقط','مسندم','أخرى']
+}
+
+document.querySelectorAll('select[name="country"]').forEach(item => {
+    item.addEventListener('change', () => {
+        const country = item.value
+
+        const cities = citiesByCountry[country]
+
+        document.querySelectorAll('#paymentcities option').forEach(option => option.remove())
+
+        const firstOption = document.createElement('option')
+        const optionText = document.createTextNode('اختر المدينة')
+        firstOption.appendChild(optionText)
+        firstOption.setAttribute('value', '')
+        firstOption.setAttribute('disabled', 'true')
+        firstOption.setAttribute('selected', 'true')
+
+        const city_options = document.getElementById('paymentcities')
+        city_options.appendChild(firstOption)
+
+        cities.forEach(city => {
+            const newOption = document.createElement('option')
+            const optionText = document.createTextNode(city)
+            newOption.appendChild(optionText)
+            newOption.setAttribute('value', city)
+            city_options.appendChild(newOption)
+        })
+    })
+})
+
+// أخفاء وإظهار حقول ادخال البطاقة الإئتمانية
+
+document.querySelectorAll('#form-checkout input[name="payment-method"]').forEach(item => {
+    item.addEventListener('change', () => {
+        const paymentMethod = item.value;
+
+        const creditCardInputs = document.querySelectorAll('#credit_card_info input');
+
+        if(paymentMethod === 'on_delivery') {
+            creditCardInputs.forEach(input => {
+                input.style.display='none'
+            })
+        } else {
+            creditCardInputs.forEach(input => {
+                input.style.display='block'
+            })
+        }
+    })
+})
 
 
 console.log("أهلا بك في متجر أنوسة للأنوثة")

@@ -638,7 +638,18 @@ h1.custom-heading{
     color: #b9001b;
 }
 
+/* --------------------------------------------------------------Payment Page------------------------------------------------------------------- */
 
+.custom-input-details{
+    margin-bottom: 15px;
+    border-width: 2px;
+    border-radius: 10px;
+    height: 46px !important;
+    padding: 0 16px;
+    font-size: 18px;
+    width: 85%; 
+    /*حطيت 85 بدلا من 98 عشان المربعات تصغر */
+}
 
 @media (max-width: 1399.98px) or (min-width: 1399.98px)  { 
     /*  or (min-width: 1399.98px) من عندي */
@@ -766,10 +777,10 @@ h1.custom-heading{
         margin: 10px;
         font-size: 20px;
     }
-
 }
 
 @media (max-width: 767.98px) {
+
     
     #carousel-featured{
         padding-bottom: 25px;
@@ -815,11 +826,17 @@ h1.custom-heading{
     .custom-table th:first-child,
     .custom-table td:first-child{
     width: auto ;
-}
+    }
+   
+    .hide-on-small{
+        display: none;
+    }
 
-.hide-on-small{
-    display: none;
-}
+    .custom-input-details{        
+        width: 100%; 
+        /*من عندي عشان المربع يكبر لما الشاشة تصغر */
+    }
+    
 }
 
 @media (max-width: 575.98px) { 
